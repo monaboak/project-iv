@@ -1,34 +1,365 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <!--smooth scroll effect-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
     <!--link to style.css-->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <a href="http://monaboak.mejowp.com/">
     <img
-      src="images/iphone4.png"
-      style="width: 500px; height: auto; float: right; padding-right: 50px"
+      src="images/gine.jpg"
+      style="position: absolute; width: auto; height: 80px"
     />
-    <h1>2010</h1>
-    <p>
-      Apple released its next iPhone just over a year later. The iPhone 4 model
-      was introduced on June 7th, 2010 and hit the stores a few weeks later on
-      June 24th. Apple took this release as an opportunity to remodel the
-      physical structure of the iPhone. They marketed it as the “Thinnest
-      Smartphone Ever”. It was during this era that the FaceTime feature was
-      introduced. Apple accomplished a great deal with this release- greatly
-      elevating the iPhone brand. Retina display, 5 megapixel camera and HD
-      video recording gave way for the infamous wave of iPhone photography that
-      started after the iPhone 4’s release. This release included three storage
-      options 8GB, 16GB and 32GB. This iPhone came with Apple’s latest operating
-      system IOS4. IOS4 included 100 new features and 1500 new APIs for
-      developers. The jump from the 3GS to the 4 was Apple’s biggest to date.
-      “iPhone 4 is the biggest leap since the original iPhone,” said Steve Jobs,
-      Apple’s CEO. “FaceTime video calling sets a new standard for mobile
-      communication, and our new Retina display is the highest resolution
-      display ever in a phone, with text looking like it does on a fine printed
-      page. We have been dreaming about both of these breakthroughs for
-      decades.” The iPhone 4 sold nearly 40 million units worldwide.
-    </p>
-  </body>
+  </a>
+  <body id="iphone1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body style="background-color: white;">
+
+<h1 style= "padding-top: 0.5px" >2008</h1>
+<h1 style="font-style:italic; font-size: 40px; padding-bottom: 1px">iPhone 3G</h1>
+
+<div class="row">
+  <div class="column" >
+    <div id="scene3D">
+			<div id="iphone">
+				<div class="slab black">					
+					<div class="top"></div>
+					<div class="right"></div>
+					<div class="bottom"></div>
+					<div class="left"></div>
+					<div id="webcam">
+						<div id="flash"></div>
+					</div>
+					<div id="speaker-front">
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+					</div>
+					<div id="screen">
+						<video controls autoplay muted loop src="https://movies.apple.com/media/us/html5/showcase/2011/demos/apple-html5-demo-tron-us_848x352.m4v" width="328.2" height="218"></video>
+					</div>
+					<div id="home-button">
+						<div id="square"></div>
+					</div>
+					<div class="front thickness-end"></div>
+					<div class="front thickness"></div>
+					<div class="front"></div>
+					<div class="back"></div>
+				</div>
+				<div class="slab">
+					<div class="top">
+						<div class="join"></div>
+						<div class="on-off">
+							<div class="on-off on-off-1"></div>
+							<div class="on-off on-off-2"></div>
+							<div class="on-off on-off-3"></div>
+							<div class="on-off on-off-4"></div>
+						</div>
+						<div id="earphone"></div>
+						<div id="click"></div>
+					</div>
+					<div class="right">
+						<div class="join"></div>
+						<div id="sim">
+							<div id="hole"></div>
+						</div>
+					</div>
+					<div class="bottom">
+						<div class="speaker">
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+						</div>
+						<div class="screws">X</div>
+						<div id="dock">
+							<div id="connector"></div>
+						</div>
+						<div class="screws screws-right">X</div>
+						<div class="speaker speaker-right">
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot"></div>
+						</div>
+					</div>
+					<div class="left">
+						<div id="ringtone">
+							<div class="lock">
+								<div class="lock lock-1"></div>
+								<div class="lock lock-2"></div>
+								<div class="lock lock-3"></div>
+								<div class="lock lock-4"></div>
+								<div class="lock lock-5"></div>
+							</div>
+						</div>
+						<div class="volume">
+							<div class="volume volume-1"></div>
+							<div class="volume volume-2"></div>
+							<div class="volume volume-3"></div>
+							<div class="volume volume-4"></div>
+							<div class="volume volume-5">+</div>
+						</div>
+						<div class="volume volume-less">
+							<div class="volume volume-1"></div>
+							<div class="volume volume-2"></div>
+							<div class="volume volume-3"></div>
+							<div class="volume volume-4"></div>
+							<div class="volume volume-5">|</div>
+						</div>
+						<div class="join"></div>							
+					</div>
+					<div class="front"></div>
+					<div class="back"></div>
+				</div>
+				<div class="slab black black-back">
+					<div class="top"></div>
+					<div class="right"></div>
+					<div class="bottom"></div>
+					<div class="left"></div>					
+					<div class="front"></div>
+					<div class="back"></div>
+				</div>
+			</div>
+		</div>	
+  </div>
+  <div class="column" style="background-color:white;">
+    
+    <p>The iPhone 3GS was released on June 19th, 2009. During the press release in San Francisco on June 8th, 2009, Apple assured the public that this iPhone would prove to be the best model yet. The 3GS model was described as the </p>
+    <h2 style="font-style:italic;">“fastest, most powerful iPhone yet, packed with incredible new features including improved speed and performance—up to twice as fast as iPhone 3G—with longer battery life, a high-quality 3 megapixel autofocus camera, easy to use video recording and hands free voice control.”  </h2>
+    <p>The new operating system introduced with the 3GS was the iPhone OS 3.0. This system proved to further advance the phone by providing over one hundred new usage features (spotlight search, landscape key board, etc.). 
+
+      The 3GS release was prior to the birth of ‘Siri’, but it still managed to introduce a voice control feature. Voice control offered users hands free operation of their iPhone. Apple saw crushing sales, beating their previous records by selling 20.73 million units worldwide. 
+      </p>
+  </div>
+</div>
+
+    <a href="iPhone 4.html">
+        <img src="images/arrow-down-white.png"
+    style="width: 15%; height: auto; vertical-align: bottom; padding-top: 230px">
+    </a>
+
+
+</body>
 </html>

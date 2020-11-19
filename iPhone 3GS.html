@@ -1,30 +1,92 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <!--smooth scroll effect-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
     <!--link to style.css-->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <a href="http://monaboak.mejowp.com/">
     <img
-      src="images/iphone3gs.png"
-      style="width: 500px; height: auto; float: right; padding-right: 50px"
+      src="images/gine.jpg"
+      style="position: absolute; width: auto; height: 80px"
     />
-    <h1>2009</h1>
-    <p>
-      The iPhone 3GS was released on June 19th, 2009. During the press release
-      in San Francisco on June 8th, 2009, Apple assured the public that this
-      iPhone would prove to be the best model yet. The 3GS model was described
-      as the “fastest, most powerful iPhone yet, packed with incredible new
-      features including improved speed and performance—up to twice as fast as
-      iPhone 3G—with longer battery life, a high-quality 3 megapixel autofocus
-      camera, easy to use video recording and hands free voice control.” The new
-      operating system introduced with the 3GS was the iPhone OS 3.0. This
-      system proved to further advance the phone by providing over one hundred
-      new usage features (spotlight search, landscape key board, etc.). The 3GS
-      release was prior to the birth of ‘Siri’, but it still managed to
-      introduce a voice control feature. Voice control offered users hands free
-      operation of their iPhone. Apple saw crushing sales, beating their
-      previous records by selling 20.73 million units worldwide.
-    </p>
-  </body>
+  </a>
+  <body id="iphone1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h1 style= "padding-top: 0.5px" >2008</h1>
+<h1 style="font-style:italic; font-size: 40px; padding-bottom: 1px">iPhone 3G</h1>
+
+<div class="row">
+  <div class="column" style="background-color:black;">
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/N-C_jUUnZfQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="column" style="background-color:black;">
+    
+    <p>The iPhone 3GS was released on June 19th, 2009. During the press release in San Francisco on June 8th, 2009, Apple assured the public that this iPhone would prove to be the best model yet. The 3GS model was described as the </p>
+    <h2 style="font-style:italic;">“fastest, most powerful iPhone yet, packed with incredible new features including improved speed and performance—up to twice as fast as iPhone 3G—with longer battery life, a high-quality 3 megapixel autofocus camera, easy to use video recording and hands free voice control.”  </h2>
+    <p>The new operating system introduced with the 3GS was the iPhone OS 3.0. This system proved to further advance the phone by providing over one hundred new usage features (spotlight search, landscape key board, etc.). 
+
+      The 3GS release was prior to the birth of ‘Siri’, but it still managed to introduce a voice control feature. Voice control offered users hands free operation of their iPhone. Apple saw crushing sales, beating their previous records by selling 20.73 million units worldwide. 
+      </p>
+  </div>
+</div>
+
+    <a href="iPhone 4.html">
+        <img src="images/arrow-down-white.png"
+    style="width: 15%; height: auto; vertical-align: bottom; padding-top: 230px">
+    </a>
+
+
+</body>
 </html>

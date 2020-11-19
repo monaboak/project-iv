@@ -1,6 +1,6 @@
 /*Homepage*/
 html {
-  scroll-behavior: ;
+  scroll-behavior: auto, smooth;
 }
 
 body {

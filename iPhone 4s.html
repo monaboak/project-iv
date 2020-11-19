@@ -1,33 +1,94 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <!--smooth scroll effect-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
     <!--link to style.css-->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <a href="http://monaboak.mejowp.com/">
     <img
-      src="images/iphone4s.png"
-      style="width: 500px; height: auto; float: right; padding-right: 50px"
+      src="images/gine.jpg"
+      style="position: absolute; width: auto; height: 80px"
     />
-    <h1>2011</h1>
-    <p>
-      2011 was a major year for Apple and the iPhone. The company launched not
-      only a new iPhone model -the 4S- but also released IOS5, iCloud, and the
-      wildly popular Siri. the iPhone 4S also included a dual-core A5 chip that
-      provided high quality graphics and fast performance. The 2011 iPhone press
-      release was held in Cupertino, California on October 4th. Apple had faced
-      threats from competitors attempting to mimic iPhone qualities. Due to
-      this, they stepped up their game with the 2011 release. iCloud proved to
-      be a game changer, because it allowed users to wirelessly store content on
-      all their Apple products. This also proved to be a marketing tactic- it
-      made more sense for users to not only own an Apple iPhone, but an iPad,
-      Mac, and MacBook as well. “iPhone 4S plus iOS 5 plus iCloud is a
-      breakthrough combination that makes the iPhone 4S the best iPhone ever,”
-      said Philip Schiller, Apple’s senior vice president of Worldwide Product
-      Marketing. “While our competitors try to imitate iPhone with a checklist
-      of features, only iPhone can deliver these breakthrough innovations that
-      work seamlessly together.” The iPhone 4S hit the market on October 14th,
-      2011, selling 72.3 million units worldwide.
+  </a>
+  <body id="iphone1" style="background-color: #EEEEEE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h1 style= "padding-top: 0.5px; color: #4B4B4B" >2011</h1>
+<h1 style="font-style:italic; font-size: 40px; padding-bottom: 1px; background-color: #EEEEEE; color: #737373">iPhone 4S</h1>
+
+<div class="row">
+  <div class="column" style="background-color: #EEEEEE;">
+    
+    <img src="images/iphone-4s-siri.png">
+  </div>
+  <div class="column" style="background-color:#EEEEEE;">
+    
+    <p style="color: #4B4B4B">2011 was a major year for Apple and the iPhone. The company launched not only a new iPhone model -the 4S- but also released IOS5, iCloud, and the wildly popular Siri. the iPhone 4S also included a dual-core A5 chip that provided high quality graphics and fast performance.
+        </p>
+    <h2 style="font-style:italic; color: #4B4B4B">“iPhone 4S plus iOS 5 plus iCloud is a breakthrough combination that makes the iPhone 4S the best iPhone ever,” said Philip Schiller, Apple’s senior vice president of Worldwide Product Marketing. “While our competitors try to imitate iPhone with a checklist of features, only iPhone can deliver these breakthrough innovations that work seamlessly together.”</h2>
+    <p style="color: #4B4B4B">
+      The 2011 iPhone press release was held in Cupertino, California on October 4th. Apple had faced threats from competitors attempting to mimic iPhone qualities. Due to this, they stepped up their game with the 2011 release. iCloud proved to be a game changer, because it allowed users to wirelessly store content on all their Apple products. This also proved to be a marketing tactic- it made more sense for users to not only own an Apple iPhone, but an iPad, Mac, and MacBook as well. The iPhone 4S hit the market on October 14th, 2011, selling 72.3 million units worldwide. 
     </p>
-  </body>
+  </div>
+</div>
+
+    <a href="iPhone 3G.html">
+        <img src="images/arrow-down-white.png"
+    style="width: 15%; height: auto; vertical-align: bottom; padding-top: 160px">
+    </a>
+
+
+</body>
 </html>
+
+

@@ -1,6 +1,6 @@
 /*Homepage*/
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: ;
 }
 
 body {
@@ -25,9 +25,7 @@ img {
 
 h1 {
   text-align: center;
-  padding-top: 30px;
   font-size: 100px;
-
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 

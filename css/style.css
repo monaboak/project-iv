@@ -13,3 +13,11 @@ img {
   width: 50%;
   height: auto;
 }
+
+h1 {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 100px;
+
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}

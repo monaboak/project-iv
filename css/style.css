@@ -1145,3 +1145,125 @@ video {
   -webkit-transform: translateZ(-3px);
   transform: translateZ(-3px);
 }
+
+#iPhone5.html body {
+  background-color: #2574b0;
+  margin: 2em 0 0 2em;
+}
+
+/* WHITE IPHONE SETTINGS */
+.white {
+  background: #fff;
+  border: #ebebeb 5px solid;
+}
+
+.white .camera {
+  background: #d7d7d7;
+  border: #ebebeb 2px solid;
+}
+
+.white .earpiece {
+  border: #ebebeb 2px solid;
+}
+
+.white .home-btn {
+  background: -webkit-linear-gradient(#e0e0e0, #fafafa 50%);
+  background: linear-gradient(#e0e0e0, #fafafa 50%);
+  border: #f8f8f8 2px solid;
+}
+
+/* BLACK IPHONE SETTINGS */
+.black {
+  background: #000;
+  border: #222b32 5px solid;
+}
+
+.black .camera {
+  border: #222 2px solid;
+}
+
+.black .earpiece {
+  border: #111 2px solid;
+}
+
+.black .home-btn {
+  background: -webkit-linear-gradient(#000 45%, #333);
+  background: linear-gradient(#000 35%, #333);
+  border: #222 2px solid;
+}
+
+.black .home-btn::before {
+  border: solid 2px #666;
+}
+
+/* GLOBAL SETTINGS */
+.iphone5 .camera {
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: -webkit-radial-gradient(#184282 10%, #111 65%, #fff);
+  background: radial-gradient(#184282 10%, #111 65%, #fff);
+}
+
+.iphone5 .earpiece {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 50px;
+  height: 6px;
+  border-radius: 10px;
+  background: #333;
+}
+
+.iphone5 .screen {
+  background: #222;
+  background-size: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 25px;
+  width: 247px;
+  height: 439px;
+  border: #000 2px solid;
+  border-radius: 4px;
+}
+
+.iphone5 .home-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+}
+
+.home-btn::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-top: 13px;
+  width: 18px;
+  height: 18px;
+  border: solid 2px #d5d5d5;
+  border-radius: 5px;
+}
+
+.iphone5 {
+  float: left;
+  margin: 0 auto;
+  margin-right: 50px;
+  width: 288px;
+  height: 611px;
+  text-align: center;
+  border-radius: 35px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px;
+  -webkit-box-reflect: below 2px -webkit-linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(
+          0,
+          0,
+          0,
+          0.9
+        )
+        135%);
+}

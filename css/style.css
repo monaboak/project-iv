@@ -753,7 +753,7 @@ iframe {
   border-top: 3px solid #3c3c3c;
   background: #b0b1b3;
   background: -moz-linear-gradient(top, #b0b1b3 0%, #717274 100%);
-  background: -webkit-gradient(
+  background: -webkit-gradient 
     linear,
     left top,
     left bottom,

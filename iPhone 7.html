@@ -1,101 +1,92 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <!--smooth scroll effect-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
     <!--link to style.css-->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+  <a href="http://monaboak.mejowp.com/">
+    <img
+      src="images/gine.jpg"
+      style="position: absolute; width: auto; height: 80px"
+    />
+  </a>
+  <body id="iphone1" style="background-color: white">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 </style>
 </head>
-<body class="">
-    <div class="iphone centercenter w3-display-container">
-       <div class="i-top w3-display-topmiddle"> 
-          <div class="i-sensor"></div>
-          <div class="i-camera"></div>
-          <div class="i-speaker"></div> 
-       </div>
-       <div class="i-screen w3-display-middle">
-          <section id="i-home" style="display:block">
-             <div class="i-notificationbar w3-display-container">
-                <div class="n-left w3-display-topleft" style="margin-left: 5px">
-                  <div class="n-signal-pos" style="float: left"></div>
-                  <div class="n-signal-pos" style="float: left"></div> 
-                  <div class="n-signal-pos" style="float: left"></div>
-                  <div class="n-signal-pos" style="float: left"></div>
-                  <div class="n-signal-neg" style ="float: left"></div>
-                  <span style="float: left; padding-top:2px">&nbsp;Digicel <span class="roboto">LTE</span> </span>
-                </div>
-                
-                <div class="n-right w3-display-topright">
-                   <span class="roboto" style="float:left; margin-right:7px; margin-top: 1px">100%</span>
-                   <span style="position: relative; top: -2px; right:3px">
-                      <svg version="1.1" width="20px" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-      viewBox="0 0 452.267 452.267" style="enable-background:new 0 0 452.267 452.267;" xml:space="preserve">
- <g>
-     <path style="fill:#fff;" d="M0,119.467V332.8h426.667V119.467H0z M401.067,307.2H25.6V145.067h375.467V307.2z"/>
-     <rect x="51.2" y="170.667" style="fill:#ffffff;" width="324.267" height="110.933"/>
-     <rect x="426.667" y="170.667" style="fill:#FFFFFF;" width="25.6" height="110.933"/>
- </g>
- <g>
- </g>
- <g>
- </g>
- <g>
- </g>
- <g>
- </g>
- <g>
- </g>
- <g>
- </g>
- <g>
- </g>
- <g>
- </g>
- <g>
- </g>
- <g>
- </g>
- <g>
- </g>
- <g>
- </g>
- <g>
- </g>
- <g>
- </g>
- <g>
- </g>
- </svg>
-                   </span>
-                </div>
-             </div>
-             <div class="home-hour w3-display-topmiddle">
-                <br /><br />
-                <p class="hour" id="hour"></p>
-             </div>
-             <button class="button-trans w3-display-bottommiddle roboto" id="docbtn">Press to check the document</button>
-          </section> 
-          <section id="documentView" class="scroll-pane" style="display: none">
-             <article class=" jspContainer">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque odio illum quidem, beatae, mollitia voluptates! Aut tempore est officiis voluptatem, ab, iure quo consectetur ad pariatur vero, repellendus, assumenda illum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quaerat vitae qui eveniet, quos nostrum ea quasi enim sint fuga voluptate molestias suscipit illum tenetur placeat facilis dolore sit asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo earum eius veniam, repellat quaerat voluptatum recusandae beatae labore eum et itaque est! Odit et distinctio molestias doloremque, quos ducimus, praesentium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto vitae, sed vero, debitis saepe alias, in ipsam tempore soluta itaque officiis veritatis ullam, optio. Nihil accusantium, impedit voluptatem possimus laboriosam.
-             </article></section>
-       </div>
-       <div class="i-button">
-          <div class="i-button-inside" id="gotohome"></div>
-       </div>
-       <div class="i-specialsleft">
-          <div class="i-vibrate-sound"></div>
-          <div class="i-volbtn"></div>
-          <div class="i-volbtn"></div>
-       </div>
-       <div class="i-specialsright">
-          <div class="i-onoff"></div>
-       </div>
-    </div>
+<body>
+
+<h1 style= "font-family: Helvetic Neue; font-weight:300; padding-top: 0.5px; color: black" >2016</h1>
+<h1 style="font-family: Helvetic Neue; font-weight:300; font-style:italic; font-size: 40px; padding-bottom: 1px; background-color: white; color: black">iPhone 7</h1>
+
+<div class="row">
+  <div class="column" style="background-color: white;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-E0tF2zna3A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="column" style="background-color:white;">
     
- </body>
+    <p style="color: #4B4B4B"> With the release of the iPhone 7 also came the iPhone 7 plus. The two phones were released on Friday, September 16th. The most significant and well received feature of the iPhone 7 model was the new and improved camera.
+
+        </p>
+        <h2 style="font-style:italic; color: #4B4B4B">“iPhone 7 and iPhone 7 Plus dramatically improve every aspect of the iPhone experience, reaching a new level of innovation and precision to make this the best iPhone we have ever made,” said Philip Schiller, Apple’s senior vice president of Worldwide Marketing. “The completely redesigned cameras shoot incredible photos and videos day or night, the A10 Fusion chip is the most powerful chip on any smartphone while delivering the best battery life ever in an iPhone, and an entirely new stereo speaker system provides twice the sound, all within the first water and dust resistant iPhone.”</h2>
+        <p style="color: #4B4B4B">
+            
+          </p>
+  </div>
+</div>
+
+    <a href="iPhone 6.html">
+        <img src="images/arrow-down-white.png"
+    style="width: 15%; height: auto; vertical-align: bottom; padding-top: 90px">
+    </a>
 
 
-
+</body>
 </html>
-

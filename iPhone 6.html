@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!--smooth scroll effect-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    <!--link to style.css-->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <a href="http://monaboak.mejowp.com/">
+    <img
+      src="images/gine.jpg"
+      style="position: absolute; width: auto; height: 80px"
+    />
+  </a>
+  <body id="iphone1" style="background-color: white">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h1 style= "font-family: Helvetic Neue; font-weight:300; padding-top: 0.5px; color: black" >2014-2015</h1>
+<h1 style="font-family: Helvetic Neue; font-weight:300; font-style:italic; font-size: 40px; padding-bottom: 1px; background-color: white; color: black">iPhone 6 & 6s (+plus)</h1>
+
+<div class="row">
+  <div class="column" style="background-color: white;">
+    <img src="images/iphone-5s-5c.jpg" style="height: auto; width: 100%">
+  </div>
+  <div class="column" style="background-color:white;">
+    
+    <p style="color: #4B4B4B"> The iPhone 5c and 5S were released simultaneously, under a year of their predecessor, on September 20th 2013. Apple made history, as they released two new phones at the same time. 
+
+        This was a major launch for Apple. They released two vastly different iPhone models. The iPhone 5S followed the sleek and modern appearance of the iPhone 5, while the 5c model was more colorful and somewhat youthful. Apple scaled back on the distribution of this launch. As the new phones were only available in the US, Australia, Canada, China, France, Germany, Hong Kong, Japan, Puerto Rico, Singapore and the UK.
+        The iPhone 5s introduced the Touch ID™ feature, which allowed iPhone users to unlock their phone with a touch of the finger. 
+        </p>
+        <h2 style="font-style:italic; color: #4B4B4B">“iPhone 5s redefines the best smartphone experience in the world with amazing new features all packed into a remarkable thin and light design, including the Apple-designed A7 64-bit chip, all-new 8 megapixel iSight® camera with True Tone flash”</h2>
+        <p style="color: #4B4B4B">
+            The iPhone 5c had an unconventional design. The phone came in blue, green. Pink, yellow, and white. “iPhone 5c features an all-new design, packed with features people know and love like the beautiful 4-inch Retina® display, blazing fast performance of the A6 chip, and the 8 megapixel iSight camera—all while delivering great battery life.” 
+
+Both models featured the most significant iOS update since the first iPhone- iOS7. The features in this operating system update included the Control Center, Notification Center, improved Multitasking, AirDrop®, enhanced Photos, Safari®, Siri® and introduces iTunes Radio℠, a free Internet radio service based on the music you listen to on iTunes®. In 2013, 150.3 million units were sold worldwide.
+ 
+          </p>
+  </div>
+</div>
+
+    <a href="iPhone 6.html">
+        <img src="images/arrow-down-white.png"
+    style="width: 15%; height: auto; vertical-align: bottom; padding-top: 350px">
+    </a>
+
+
+</body>
+</html>

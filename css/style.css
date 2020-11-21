@@ -1268,4 +1268,15 @@ video {
         135%);
 }
 
-.iPhone7
+.wrapper > div {
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.wrapper > div > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
